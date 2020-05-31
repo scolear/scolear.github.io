@@ -1,90 +1,142 @@
 * {
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
 }
+
+/* ==== HELPER COLORS FOR LAYOUT ==== */
+
+/*
+.main-header {
+  background-color: rgba(255, 248, 53, .3);
+}
+
+.primary-content {
+  background-color: rgba(140, 96, 255, .3);
+}
+
+.post {
+  background-color: rgba(255, 0, 0, .3);
+}
+*/
+
+/* ==== BASE STYLES ==== */
 
 body {
-    background-image: url(./assets/topography.png);
-    font-family: 'Consolas', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: #6c737e;
+}
+  
+h1, h2, h3, h4, h5 {
+    font-family: 'PT Serif', serif;
 }
 
-#header {
-    background-color: #333333;
-    padding: 10px 10% 5px;
-    
+h1 {
+	font-size: 2rem;
 }
 
-#header ul {
-    list-style-type: none;
-    overflow: hidden;
-    position: absolute;
-    right: 10%;
-    top: 5px;
-    padding: 10px;
+h2 {
+	font-size: 1.8rem;
 }
 
-#header li {
-    display: block;
-    float: left;
-    padding: 0 40px;
-    text-align: center;
-    
+h3 {
+    font-size: 1.6rem;
 }
 
-#header li a {
-    text-transform: uppercase;
-    color: #ff0099;
-    font-weight: 600;
+h4 {
+    font-size: 1.2rem;
 }
 
-#page-content {
-    padding: 50px 10% 50px;
+.main-header p {
+	font-size: 1.125rem;
+	letter-spacing: 0.125rem;
+	color: #6c737e;
 }
 
-#introduction {
-    margin: 0 auto;
-    line-height: 1.6;
+/* ==== LAYOUT STYLES ==== */
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,
+img, a, 
+.main-header, .primary-content {
+    margin-bottom: 1rem;
 }
 
-.serif {
-    font-family: 'Merriweather', serif;
+.main-header {
+	text-align: center;
+    padding: 1.25rem;
+    background-color: #e8ecf1;
+    margin-bottom: 2rem;
 }
 
-.serif h1 {
-    margin: 0 0 10px;
-    font-size: 45px;
+.primary-content {
+    width: 95%;
+	margin: 0 auto 1rem;
 }
 
-.serif h3 {
-    font-size: 24px;
-    color: #ff0099;
-    font-weight: 500;
+/* Article Styles */
+
+#projects {
+    text-decoration: underline 0.1em;
+    margin-bottom: 1.5rem;
+    color: #6c737e;
 }
 
-.content{
-    font-size: 20px;
-    margin: 10px auto 20px;
+.post {
+	margin: 0 auto 2rem;
 }
 
-.centered {
-    text-align: center;
+.project-title {
+    margin-bottom: 0.6rem;
 }
 
-.separator {
-    margin: 40px auto 30px;
+.project-subtitle {
+    color: #7393a7;
 }
 
-.serif h2 {
-    line-height: 1.6;
-    font-size: 26px;
+.picture {
+    width: 100%;
 }
 
-.wiki-list {
-    line-height: 1.6;
+.intro {
+    margin-bottom: 0;
 }
 
-dt {
-    font-size: 24px;
-    line-height: 2;
-    margin: 10px auto 0;
+.read-more {
+    border-radius: 2px;
+    color: #6c737e;
+    text-decoration: underline #6c737e 0.1em;
+    transition: background-color 0.5s, color 0.5s;
 }
+
+.read-more:hover {
+    color: #e8ecf1;
+    background-color: #6c737e;
+}
+
+/* ==== COMPONENT STYLES ==== */
+
+.button {
+	display: inline-block;
+    color: #6c737e;
+    text-decoration: none;
+	border-radius: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 5px;
+	width: 100px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button:hover {
+    color: #e8ecf1;
+    background-color: #6c737e;
+}
+
+.active {
+    text-decoration: underline solid #6c737e 0.1em;
+}
+

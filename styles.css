@@ -78,9 +78,8 @@ img, a,
 
 /* Article Styles */
 
-#projects {
+.section-title {
     text-decoration: underline;
-    text-decoration-thickness: 0.1em;
     margin-bottom: 1.5rem;
     color: black;
 }
@@ -109,7 +108,6 @@ img, a,
     border-radius: 2px;
     color: #6c737e;
     text-decoration: underline #6c737e;
-    text-decoration-thickness: 0.1em;
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -140,6 +138,5 @@ img, a,
 
 .active {
     text-decoration: underline solid #6c737e;
-    text-decoration-thickness: 0.1em;
 }
 

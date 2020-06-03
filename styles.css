@@ -53,13 +53,17 @@ h4 {
 	color: #6c737e;
 }
 
+
+
+
+
 /* ==== LAYOUT STYLES ==== */
 
 h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
 p,figure,
 pre,table,fieldset,hr,
-img, a, 
+img, a, figcaption,
 .main-header, .primary-content {
     margin-bottom: 1rem;
 }
@@ -76,7 +80,11 @@ img, a,
 	margin: 0 auto 1rem;
 }
 
-/* Article Styles */
+
+
+
+
+/* Main Page Styles */
 
 .section-title {
     text-decoration: underline;
@@ -96,7 +104,7 @@ img, a,
     color: #6c737e;
 }
 
-.picture {
+.cover-picture {
     width: 100%;
 }
 
@@ -115,6 +123,10 @@ img, a,
     color: #e8ecf1;
     background-color: #6c737e;
 }
+
+
+
+
 
 /* ==== COMPONENT STYLES ==== */
 
@@ -140,3 +152,27 @@ img, a,
     text-decoration: underline solid #6c737e;
 }
 
+
+
+
+
+/* -- Article Page Specific Styles -- */
+
+.article__text {
+    margin-bottom: 1rem;
+}
+
+.article__figure {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.article__image {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.article__image__caption {
+    font-size: 0.8rem;
+}
